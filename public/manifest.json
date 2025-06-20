@@ -1,0 +1,25 @@
+{
+  "short_name": "FlyAw", // Tarayıcı sekmesinde veya ana ekranda görünebilecek kısa ad
+  "name": "FlyAw Studios - Innovative Software Development", // Uygulamanın tam adı
+  "icons": [
+    {
+      "src": "favicon.ico", // Bu genellikle daha küçük bir ikondur, manifest için daha büyükleri tercih edilir
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png", // Kendi logo192.png dosyanızın yolu
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png", // Kendi logo512.png dosyanızın yolu
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".", // Uygulama açıldığında hangi URL ile başlayacağı
+  "display": "standalone", // Uygulamanın nasıl gösterileceği (örn: tarayıcı UI'ı olmadan)
+  "theme_color": "#1E40AF", // Ana tema renginiz (tailwind.config.js'deki brand-primary ile uyumlu olabilir)
+  "background_color": "#ffffff" // Uygulama yüklenirken görünecek arka plan rengi
+}

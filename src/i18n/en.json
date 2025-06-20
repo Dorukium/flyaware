@@ -1,0 +1,320 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+ "homePage": {
+    "heroTitle": "Innovative Software Solutions for a Digital World",
+    "heroSubtitle": "FlyAw Studios: We Code Your Visions into Reality.",
+    "learnMore": "Learn More",
+    "metaDescription": "FlyAw Studios: Innovative software solutions for the digital world, web and mobile application development, UI/UX design, and consulting services.",
+    "otherSectionsTitle": "More Sections to Explore Soon!",
+    "otherSectionsText": "Check out our services, projects, and more. New sections will be added as our website evolves."
+  },
+  "aboutPage": {
+    "title": "About FlyAw Studios",
+    "p1": "We are a passionate team of developers, designers, and strategists dedicated to crafting exceptional digital experiences."
+  },
+  "servicesPage": {
+    "title": "Our Services",
+    "webDev": "Web Development",
+    "mobileDev": "Mobile App Development",
+    "uiUx": "UI/UX Design"
+  },
+  "contactPage": {
+    "title": "Get in Touch",
+    "sendMessage": "Send Message"
+  },
+  "footer": {
+    "copyRight": "© {year} FlyAw Studios. All rights reserved."
+  },
+  "themeSwitcher": {
+    "toggleToDark": "Switch to Dark Mode",
+    "toggleToLight": "Switch to Light Mode"
+  },
+  "languageSwitcher": {
+    "selectLanguage": "Select Language"
+  },
+   "projectsData":
+    "sectionTitle":  "Featured Projects",
+    "viewAllProjects": "View All Projects",
+    "projectOne": {
+      "title": "Corporate Website Redesign",
+      "category": "Web Development",
+      "shortDescription": "A complete overhaul of a legacy corporate website, focusing on modern UI/UX and performance.",
+      "details": "Project Details"
+    },
+    "projectTwo": {
+      "title": "E-commerce Mobile App",
+      "category": "Mobile Development",
+      "shortDescription": "A cross-platform mobile application for a growing e-commerce business, enhancing user engagement.",
+      "details": "Project Details"
+    },
+    "projectThree": {
+      "title": "Data Analytics Dashboard",
+      "category": "Web Application",
+      "shortDescription": "An interactive dashboard for visualizing complex business data, built with modern web technologies.",
+      "details": "Project Details"
+    }
+    "servicesData": {
+    "sectionTitle": "Our Services",
+    "viewAllServices": "View All Services",
+    "webDevelopment": {
+      "title": "Web Development",
+      "shortDescription": "Creating responsive, high-performance websites and web applications tailored to your needs."
+    },
+    "mobileAppDevelopment": {
+      "title": "Mobile App Development",
+      "shortDescription": "Building intuitive and engaging mobile apps for iOS and Android platforms."
+    },
+    "uiUxDesign": {
+      "title": "UI/UX Design",
+      "shortDescription": "Crafting user-centric designs that enhance usability and provide a seamless user experience."
+    },
+    "customSoftware": {
+      "title": "Custom Software Development",
+      "shortDescription": "Tailor-made software solutions to optimize your business processes and drive growth."
+    },
+    "technicalConsulting": {
+      "title": "Technical Consulting",
+      "shortDescription": "Expert advice and strategic guidance to help you navigate complex technological challenges."
+    },
+    "supportMaintenance": {
+      "title": "Support & Maintenance",
+      "shortDescription": "Reliable support and maintenance services to ensure your applications run smoothly."
+    },
+    "learnMore": "Learn More"
+    },
+     "testimonials": {
+    "sectionTitle": "What Our Clients Say",
+    "sectionSubtitle": "Real stories from satisfied partners who chose FlyAw Studios.",
+    "clientOne": {
+      "company": "CEO, ABC Technology",
+      "comment": "FlyAw Studios transformed our online presence with a stunning website. Their team was professional, creative, and delivered beyond our expectations. Highly recommended!"
+    },
+    "clientTwo": {
+      "company": "Founder, Doe Solutions",
+      "comment": "Working with FlyAw on our mobile app was a fantastic experience. They understood our vision perfectly and brought it to life with exceptional skill and dedication."
+    },
+    "clientThree": {
+      "company": "Project Manager, Startup X",
+      "comment": "The technical expertise and problem-solving abilities of the FlyAw team were crucial to our project's success. They are reliable and truly care about their clients."
+    },
+  "cta": {
+    "title": "Ready to Start Your Next Project?",
+    "subtitle": "Let's discuss how FlyAw Studios can help you achieve your digital goals. Get in touch with us today for a free consultation.",
+    "contactUsButton": "Contact Us",
+    "ourServicesButton": "Our Services"
+  },
+"aboutPage": {
+  "metaDescription": "Learn more about FlyAw Studios: our mission, vision, values, and the passionate team behind our innovative software solutions.",
+  "title": "About FlyAw Studios",
+  "subtitle": "Crafting the future of digital experiences, one line of code at a time.",
+  "storyTitle": "Our Story & Mission",
+  "storyP1": "FlyAw Studios was born from a shared passion for innovation and a relentless pursuit of technological excellence. We saw a gap where brilliant ideas met a lack of technical execution, and we decided to bridge it. Our mission is to empower businesses and individuals by transforming their visions into robust, scalable, and user-centric digital products.",
+  "storyP2": "We believe in the power of collaboration, transparency, and continuous learning. Every project is an opportunity to innovate, to challenge ourselves, and to deliver outstanding results that drive real-world impact.",
+  "visionTitle": "Our Vision",
+  "visionP1": "To be a globally recognized leader in software development, known for our innovative solutions, commitment to quality, and a client-first approach. We aim to shape the digital landscape by creating technology that is not only powerful but also accessible and intuitive.",
+  "studioImageAlt": "FlyAw Studios - Innovative workspace concept",
+  "valuesTitle": "Our Core Values",
+  "valueInnovation": {
+    "title": "Innovation",
+    "description": "We constantly seek new and better ways to solve problems and create value."
+  },
+  "valueQuality": {
+    "title": "Quality",
+    "description": "We are committed to the highest standards in every line of code and every pixel designed."
+  },
+  "valueCollaboration": {
+    "title": "Collaboration",
+    "description": "We work closely with our clients and as a team to achieve shared goals."
+  },
+  "valueIntegrity": {
+    "title": "Integrity",
+    "description": "We operate with honesty, transparency, and a strong sense of ethics."
+  },
+  "valueClientFocus": {
+    "title": "Client Focus",
+    "description": "Our clients' success is our top priority, and we strive to exceed their expectations."
+  },
+  "valueLearning": {
+    "title": "Continuous Learning",
+    "description": "We embrace change and are always learning to stay at the forefront of technology."
+  },
+  "meetTeamTitle": "Meet Our Passionate Team",
+  "meetTeamSubtitle": "We are a group of dedicated professionals ready to bring your ideas to life. While we're preparing individual profiles, know that our collective expertise is our greatest asset."
+  },
+"servicesPage": {
+  "metaDescription": "Explore the comprehensive software development, design, and consulting services offered by FlyAw Studios.",
+  "subtitle": "Delivering excellence and innovation in every digital solution we craft. Discover how we can help your business thrive.",
+  "noServicesAvailable": "Currently, no services are listed. Please check back soon!",
+  "cta": {
+    "title": "Have a Specific Need?",
+    "subtitle": "If you don't see a service listed or have a unique requirement, don't hesitate to reach out. We love a good challenge!",
+    "button": "Contact Us for Custom Solutions"
+  },
+"serviceDetailPage": {
+  "notFound": {
+      "title": "Service Not Found",
+      "message": "The service you are looking for does not exist or may have been moved.",
+      "backLink": "Back to Services"
+  },
+  "aboutTitle": "About This Service", 
+  "keyFeaturesTitle": "Key Features",
+  "ourProcessTitle": "Our Process",
+  "step": "Step {index}", 
+  "otherServicesTitle": "Other Services",
+  "sidebarCta": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Let us help you achieve your business goals with our expert services.",
+    "button": "Contact Us"
+   "projectsPage": {
+  "metaDescription": "Discover the portfolio of FlyAw Studios. A showcase of our innovative web, mobile, and software development projects.",
+  "title": "Our Projects",
+  "subtitle": "A glimpse into the diverse range of solutions we have successfully delivered to our clients.",
+  "filter": {
+    "allCategories": "All Projects"
+  },
+  "noProjectsAvailable": "No projects are listed at the moment. Please check back soon!",
+  "noProjectsInCategory": "No projects found in this category. Try a different filter!"
+  }
+  "projectDetailPage": {
+  "notFound": {
+    "title": "Project Not Found",
+    "message": "The project you are looking for does not exist or may have been moved.",
+    "backLink": "Back to Projects"
+  },
+  "backToProjects": "Back to All Projects",
+  "overviewTitle": "Project Overview",
+  "detailsTitle": "Project Details",
+  "clientLabel": "Client",
+  "categoryLabel": "Category",
+  "timelineLabel": "Timeline",
+  "techLabel": "Technologies",
+  "keyFeaturesLabel": "Key Features"
+"contactForm": {
+  "name": {
+    "label": "Full Name",
+    "placeholder": "e.g., Ada Lovelace"
+  },
+  "email": {
+    "label": "Email Address",
+    "placeholder": "e.g., ada@example.com"
+  },
+  "subject": {
+    "label": "Subject",
+    "placeholder": "e.g., Project Inquiry"
+  },
+  "message": {
+    "label": "Your Message",
+    "placeholder": "Tell us more about your project or question..."
+  },
+  "sendButton": "Send Message",
+  "sendingButton": "Sending...",
+  "status": {
+    "sending": "Sending...",
+    "success": "Your message has been sent successfully! We will get back to you soon.",
+    "errorGeneral": "An error occurred. Please try again.",
+    "errorNetwork": "Network error. Please check your connection and try again." 
+  },
+"contactPage": {
+  "metaDescription": "Get in touch with FlyAw Studios. Contact us for project inquiries, collaborations, or any questions you may have. We are here to help!",
+  "title": "Get In Touch",
+  "subtitle": "We're excited to hear from you! Whether you have a project idea, a question, or just want to say hello, feel free to reach out.",
+  "formTitle": "Send Us a Message",
+  "infoTitle": "Contact Information",
+  "address": {
+    "label": "Our Office",
+    "value": "123 Innovation Drive, Tech Park, Istanbul, Turkey" 
+  },
+  "phone": {
+    "label": "Phone",
+    "value": "+90 (555) 123 4567" 
+  },
+  "email": {
+    "label": "Email",
+    "value": "info@flyawstudios.com" 
+  },
+  "followUs": "Follow Us",
+  "mapTitle": "Our Location on Map"
+  },
+"blogPage": {
+  "title": "Our Blog",
+  "subtitle": "Insights, news, and articles from the FlyAw Studios team.",
+  "metaDescription": "Read the latest articles, insights, and news from the FlyAw Studios blog on software development, design, and technology trends.",
+  "noPostsAvailable": "No blog posts available at the moment. Check back soon!",
+  "readMore": "Read More",
+  "byAuthor": "By {authorName}", 
+  "publishedOn": "Published on {date}", 
+  "filterByCategory": "Filter by Category",
+  "allCategories": "All Categories"
+},
+"blogPostDetailPage": {
+  "backToBlog": "Back to Blog",
+  "relatedPosts": "Related Posts",
+  "authorTitle": "About the Author",
+  "sharePost": "Share this post:",
+  "tagsTitle": "Tags:",
+  "categoryTitle": "Category:",
+  "notFound": {
+    "title": "Post Not Found",
+    "message": "The blog post you are looking for does not exist or may have been moved.",
+    "backLink": "Back to Blog"
+  }
+},
+"blogAuthors": {
+  "janeDoe": {
+    "name": "Jane Doe",
+    "bio": "Jane is a senior software engineer at FlyAw Studios with a passion for clean code and innovative solutions."
+  },
+  "johnSmith": {
+    "name": "John Smith",
+    "bio": "John is our lead UI/UX designer, always striving for pixel-perfect and user-friendly interfaces."
+  }
+},
+"blogCategories": {
+  "webDevelopment": "Web Development",
+  "uiUxDesign": "UI/UX Design",
+  "projectManagement": "Project Management",
+  "technology": "Technology Insights"
+},
+"blogPosts": {
+  "postOne": {
+    "title": "Modern Web Development Trends to Watch in 2025",
+    "excerpt": "Explore the cutting-edge technologies and methodologies shaping the future of web development this year and beyond.",
+    "content": "<h1>The Rise of AI in Development</h1><p>AI is not just a buzzword anymore... (buraya uzun HTML veya Markdown içeriği gelecek)</p><h2>Serverless Architectures</h2><p>Serverless continues to gain traction...</p><h3>Conclusion</h3><p>Staying updated is key...</p>",
+    "readingTime": "5 min read"
+  },
+  "postTwo": {
+    "title": "Core Principles of Effective UI/UX Design",
+    "excerpt": "A deep dive into the fundamental principles that guide the creation of intuitive, engaging, and user-centric digital products.",
+    "content": "<p>User research is the cornerstone...</p>",
+    "readingTime": "7 min read"
+  },
+  "postThree": {
+    "title": "Successful Client Communication in Software Projects",
+    "excerpt": "Tips and best practices for fostering clear, effective, and transparent communication with clients throughout the project lifecycle.",
+    "content": "<p>Setting expectations early is crucial...</p>",
+    "readingTime": "6 min read"
+  },
+"common": { 
+  "previousPost": "Previous Post",
+  "nextPost": "Next Post",
+  "commentsTitle": "Comments",
+  "commentsComingSoon": "Comments section is coming soon! In the meantime, feel free to share your thoughts on social media."
+  },
+"notFoundPage": {
+  "title": "Page Not Found",
+  "illustrationAlt": "Lost astronaut illustration",
+  "mainHeading": "Oops! Page Not Found",
+  "subHeading": "The page you're looking for doesn't seem to exist. Maybe it was moved, or you mistyped the URL.",
+  "goHomeButton": "Go to Homepage",
+  "searchButton": "Search Site"
+}
+}
+  }
+}

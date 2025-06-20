@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos de nous",
+    "services": "Services",
+    "projects": "Projets",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "homePage": {
+    "heroTitle": "Solutions logicielles innovantes pour un monde numérique",
+    "heroSubtitle": "FlyAw Studios : Nous transformons vos visions en réalité.",
+    "learnMore": "En savoir plus"
+  },
+  "aboutPage": {
+    "title": "À propos de FlyAw Studios",
+    "p1": "Nous sommes une équipe passionnée de développeurs, designers et stratèges dédiée à la création d'expériences numériques exceptionnelles."
+  },
+  "servicesPage": {
+    "title": "Nos Services",
+    "webDev": "Développement Web",
+    "mobileDev": "Développement d'applications mobiles",
+    "uiUx": "Conception UI/UX"
+  },
+  "contactPage": {
+    "title": "Contactez-nous",
+    "sendMessage": "Envoyer le message"
+  },
+  "footer": {
+    "copyRight": "© {year} FlyAw Studios. Tous droits réservés."
+  },
+  "themeSwitcher": {
+    "toggleToDark": "Passer en mode sombre",
+    "toggleToLight": "Passer en mode clair"
+  },
+  "languageSwitcher": {
+    "selectLanguage": "Choisir la langue"
+  }
+}

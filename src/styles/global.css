@@ -1,0 +1,227 @@
+/* src/styles/global.css */
+
+/* 1. Tailwind CSS Direktifleri */
+/* Bu direktifler, Tailwind'in temel stillerini, bileşenlerini ve yardımcı sınıflarını projenize dahil eder. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Temel HTML Elementleri ve Genel Stiller (@layer base içinde Tailwind'in üzerine yazabiliriz) */
+/* Bu bölüm, sitenizdeki temel HTML etiketlerinin (body, başlıklar, paragraflar, linkler vb.)
+   varsayılan görünümlerini tanımlar. Tipografi, renkler ve genel okunabilirlik burada ayarlanır. */
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased; /* iOS ve macOS için daha yumuşak font görünümü */
+    -moz-osx-font-smoothing: grayscale; /* Firefox için daha yumuşak font görünümü */
+    scroll-behavior: smooth; /* Sayfa içi linklerde yumuşak kaydırma efekti */
+    @apply font-sans; /* tailwind.config.js'deki varsayılan sans-serif font ailesini uygular (örn: Inter) */
+  }
+
+  body {
+    @apply bg-white text-light-text dark:bg-dark-bg dark:text-dark-text; /* Tema için temel arka plan ve metin renkleri */
+    @apply transition-colors duration-300 ease-in-out; /* Tema değişiminde yumuşak renk geçişi */
+    min-height: 100vh; /* Sayfa içeriği az olsa bile body'nin en az ekran yüksekliğinde olmasını sağlar */
+    line-height: 1.65; /* Genel satır yüksekliği, okunabilirliği artırır */
+  }
+
+  /* Başlık Stilleri (h1-h6) */
+  /* Tutarlı bir başlık hiyerarşisi ve görünümü sağlar. */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight mb-4 md:mb-6; /* Kalın font, harf aralığı ve alt boşluk */
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl lg:text-6xl leading-tight; /* Boyut ve satır yüksekliği */
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl lg:text-5xl leading-tight;
+  }
+  h3 {
+    @apply text-2xl sm:text-3xl lg:text-4xl leading-snug;
+  }
+  h4 {
+    @apply text-xl sm:text-2xl lg:text-3xl leading-snug;
+  }
+  h5 {
+    @apply text-lg sm:text-xl lg:text-2xl leading-normal;
+  }
+  h6 {
+    @apply text-base sm:text-lg lg:text-xl leading-normal;
+  }
+
+  /* Paragraf Stilleri */
+  p {
+    @apply mb-4 text-base lg:text-lg; /* Alt boşluk ve metin boyutu */
+    max-width: 75ch; /* Okunabilirlik için ideal satır uzunluğu (yaklaşık 75 karakter) */
+  }
+  /* Tailwind Typography eklentisiyle kullanıldığında okunabilirliği artırmak için ek ayar */
+  .prose p, .prose ul, .prose ol, .prose blockquote {
+    max-width: 75ch;
+  }
+
+
+  /* Link Stilleri */
+  a {
+    @apply text-brand-primary dark:text-brand-secondary; /* Marka renkleriyle uyumlu link renkleri */
+    @apply hover:opacity-80 transition-opacity duration-200 ease-in-out; /* Hover efekti */
+    /* @apply hover:underline; // İsteğe bağlı olarak hover'da alt çizgi eklenebilir */
+  }
+
+  /* Liste Stilleri (sıralı ve sırasız) */
+  ul, ol {
+    @apply pl-5 mb-4; /* İçten boşluk ve alt boşluk */
+  }
+  ul {
+    list-style-type: disc; /* Varsayılan madde işareti */
+  }
+  ol {
+    list-style-type: decimal; /* Varsayılan numara stili */
+  }
+  li {
+    @apply mb-2; /* Liste elemanları arası boşluk */
+  }
+
+  /* Metin Seçimi (Selection) Stilleri */
+  /* Kullanıcı metin seçtiğinde görünecek özel arka plan ve metin renkleri. Şık bir detaydır. */
+  ::selection {
+    @apply bg-brand-accent text-white dark:bg-yellow-600 dark:text-gray-900;
+  }
+  ::-moz-selection { /* Firefox için uyumluluk */
+    @apply bg-brand-accent text-white dark:bg-yellow-600 dark:text-gray-900;
+  }
+
+  /* Form Elemanları için Genel Odak Stili */
+  /* Erişilebilirlik için önemlidir. Sadece klavye ile odaklanıldığında görünür. */
+  input:focus,
+  textarea:focus,
+  select:focus,
+  button:focus-visible {
+    @apply outline-none ring-2 ring-brand-accent ring-offset-2 dark:ring-offset-dark-bg; /* Odak halkası */
+  }
+}
+
+/* 3. Özel Yardımcı Sınıflar ve Bileşenler (@layer components veya @layer utilities) */
+/* Bu katmanlar, projeye özel yeniden kullanılabilir bileşen stilleri veya yardımcı sınıflar tanımlamak için kullanılır. */
+@layer components {
+  /* Özel bir konteyner sınıfı (Tailwind'in kendi container sınıfına alternatif veya ek olarak) */
+  .content-container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Kartlar için genel bir hover efekti */
+  .card-hover-effect {
+    @apply transition-all duration-300 ease-in-out shadow-lg hover:shadow-2xl transform hover:-translate-y-1;
+  }
+
+  /* Butonlar için ince bir parlama efekti (opsiyonel, estetik bir dokunuş) */
+  .btn-glow-effect {
+    @apply relative overflow-hidden;
+  }
+  .btn-glow-effect::after {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full opacity-0;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+    transition: opacity 0.3s ease;
+  }
+  .btn-glow-effect:hover::after {
+    @apply opacity-100;
+  }
+}
+
+@layer utilities {
+  /* Basit Giriş Animasyonları (Keyframes ve bunları tetikleyen sınıflar) */
+  /* Sayfa elemanlarının daha yumuşak ve dikkat çekici bir şekilde görünmesini sağlar. */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out forwards; /* Animasyonun sonunda son karede kalır */
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+
+  @keyframes scaleIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1;}
+  }
+  .animate-scaleIn {
+      animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  /* Kaydırma Çubuğu Stilleri (Webkit tabanlı tarayıcılar: Chrome, Safari, yeni Edge) */
+  /* Bu stiller her tarayıcıda çalışmayabilir. tailwind-scrollbar-hide eklentisi kullanılıyorsa çakışabilir. */
+  ::-webkit-scrollbar {
+    width: 10px; /* Dikey kaydırma çubuğu genişliği */
+    height: 10px; /* Yatay kaydırma çubuğu yüksekliği */
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-700; /* Kaydırma çubuğunun yolu (arkaplanı) */
+    border-radius: 10px; /* Yuvarlak kenarlar */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brand-secondary dark:bg-brand-primary; /* Kaydırma çubuğunun kendisi (sürüklenen kısım) */
+    border-radius: 10px; /* Yuvarlak kenarlar */
+    @apply hover:bg-blue-600 dark:hover:bg-blue-400; /* Üzerine gelince renk değişimi */
+  }
+
+  /* Firefox için Scrollbar Stilleri (Daha kısıtlı ama bazı özelleştirmelere izin verir) */
+  /* Bu kısım, tailwind.config.js dosyanızda 'colors.brand.secondary' gibi renklerin tanımlı olmasını gerektirir. */
+  /*
+  body {
+    scrollbar-width: thin; // 'auto', 'thin', 'none'
+    scrollbar-color: theme('colors.brand.secondary') theme('colors.gray.100'); // Başparmak rengi ve yol rengi
+  }
+  :root.dark body { // Karanlık mod için farklı renkler
+    scrollbar-color: theme('colors.brand.primary') theme('colors.gray.700');
+  }
+  */
+
+  /* Metin Kırpma (ellipsis) - Çok satırlı metinleri belirli bir satır sayısından sonra keser */
+  .truncate-multiline-2 { /* İki satırdan sonra "..." */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .truncate-multiline-3 { /* Üç satırdan sonra "..." */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/*
+  Font Yükleme (@font-face veya @import):
+  Eğer Google Fonts gibi bir CDN (İçerik Dağıtım Ağı) kullanıyorsanız, fontları
+  public/index.html dosyanızdaki <head> içinde <link> etiketi ile yüklemeniz genellikle en iyi performansı verir.
+  Alternatif olarak, CSS dosyanızın en başına @import kuralı ile de ekleyebilirsiniz.
+  Örnek @import (CSS dosyasının en başına eklenmeli):
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+
+  Bu @import'u kullanacaksanız, Tailwind direktiflerinden (@tailwind base vb.) ÖNCE yer almalıdır.
+  tailwind.config.js dosyanızdaki fontFamily ayarlarınızın bu font isimleriyle eşleştiğinden emin olun:
+  Örn:
+  fontFamily: {
+    sans: ['Inter', 'system-ui', 'sans-serif'], // Fallback fontlar eklemek iyi bir pratiktir
+    serif: ['Merriweather', 'Georgia', 'serif'], // Fallback fontlar
+  }
+*/

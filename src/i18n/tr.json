@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "projects": "Projeler",
+    "blog": "Blog",
+    "contact": "İletişim"
+  },
+  "homePage": {
+    "heroTitle": "Dijital Dünya için Yenilikçi Yazılım Çözümleri",
+    "heroSubtitle": "FlyAw Studios: Vizyonlarınızı Gerçeğe Kodluyoruz.",
+    "learnMore": "Daha Fazla Bilgi"
+  },
+  "aboutPage": {
+    "title": "FlyAw Studios Hakkında",
+    "p1": "Olağanüstü dijital deneyimler yaratmaya kendini adamış tutkulu geliştiriciler, tasarımcılar ve stratejistlerden oluşan bir ekibiz."
+  },
+  "servicesPage": {
+    "title": "Hizmetlerimiz",
+    "webDev": "Web Geliştirme",
+    "mobileDev": "Mobil Uygulama Geliştirme",
+    "uiUx": "UI/UX Tasarım"
+  },
+  "contactPage": {
+    "title": "Bize Ulaşın",
+    "sendMessage": "Mesaj Gönder"
+  },
+  "footer": {
+    "copyRight": "© {year} FlyAw Studios. Tüm hakları saklıdır."
+  },
+  "themeSwitcher": {
+    "toggleToDark": "Karanlık Moda Geç",
+    "toggleToLight": "Aydınlık Moda Geç"
+  },
+  "languageSwitcher": {
+    "selectLanguage": "Dil Seçin"
+  }
+}
